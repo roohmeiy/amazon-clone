@@ -212,7 +212,7 @@ body {
 
 
 
-@media (max-width: 62rem) {
+@media (max-width: 41.5rem) {
     body {
         margin-top: 120px;
         /* Increase top margin for smaller screens */
