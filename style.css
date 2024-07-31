@@ -6,7 +6,7 @@
 }
 
 body {
-    margin:60px 0 0 0;
+    margin: 60px 0 0 0;
     padding: 0;
     width: 100%;
     overflow-x: hidden;
@@ -25,7 +25,7 @@ body {
     justify-content: space-between;
     padding: 0 1rem;
     color: white;
-    z-index:1000;
+    z-index: 1000;
 }
 
 #logo {
@@ -99,7 +99,9 @@ body {
     border: 4px solid #febd69;
 }
 
-.accounts, .orders, .cart {
+.accounts,
+.orders,
+.cart {
     flex-shrink: 0;
     margin: 0 5px;
     width: auto;
@@ -136,6 +138,7 @@ body {
 .border:hover {
     border: 1px solid white;
 }
+
 @media (max-width: 62em) {
     .navbar {
         flex-wrap: wrap;
@@ -143,7 +146,12 @@ body {
         padding: 10px;
     }
 
-    #logo, .nav-location, .nav-search, .accounts, .orders, .cart {
+    #logo,
+    .nav-location,
+    .nav-search,
+    .accounts,
+    .orders,
+    .cart {
         margin: 5px;
     }
 
@@ -182,6 +190,11 @@ body {
     padding: 0;
 }
 
+.menu-list {
+    display: flex;
+    /* Visible by default on larger screens */
+}
+
 .panel li {
     padding: 8px 9px;
 }
@@ -192,15 +205,17 @@ body {
     cursor: pointer;
     color: white;
 }
-.menu:hover{
-  border: 3px solid white;
+
+.menu:hover {
+    border: 3px solid white;
 }
 
 
 
 @media (max-width: 62rem) {
     body {
-        margin-top: 120px; /* Increase top margin for smaller screens */
+        margin-top: 120px;
+        /* Increase top margin for smaller screens */
     }
 
     .navbar {
@@ -210,8 +225,13 @@ body {
         padding: 10px;
     }
 
-     
-   #logo, .nav-location, .nav-search, .accounts, .orders, .cart {
+
+    #logo,
+    .nav-location,
+    .nav-search,
+    .accounts,
+    .orders,
+    .cart {
         margin: 5px;
     }
 
@@ -220,6 +240,7 @@ body {
         width: 100%;
         max-width: none;
     }
+
     .panel {
         top: 128px;
         position: absolute;
@@ -228,38 +249,30 @@ body {
         justify-content: flex-start;
         height: auto;
     }
+
     .menu {
         display: block;
     }
+
     .menu-list {
-        display: flex;
         position: absolute;
         top: 100%;
         left: 0;
         background-color: #222f3d;
         width: 100%;
         flex-direction: column;
-        text-align: left;
-        transform: translateX(-100%);
-        transition: all 0.5s ease;
-        opacity: 0;
-        visibility: hidden;
-    }
-    .menu-list li{
-        padding: 20px;
-    }
-    .menu-list.active {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
+        text-align: center;
     }
 
+    .menu-list li {
+        padding: 20px;
+    }
 }
 
 
 @media (max-width: 612px) {
     .panel {
-        top: 187px; 
+        top: 187px;
     }
 }
 
@@ -274,8 +287,9 @@ body {
     background-size: cover;
     display: flex;
     justify-content: center;
-  }
-  .content-msg {
+}
+
+.content-msg {
     height: auto;
     min-height: 26px;
     width: 100%;
@@ -289,51 +303,57 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  /* shopping section */
-  .shopping {
+}
+
+/* shopping section */
+.shopping {
     background-color: rgb(166, 216, 213);
-  }
-  .line {
+}
+
+.line {
     height: auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px 0;
-  }
-  .box {
+}
+
+.box {
     height: 395px;
     width: 270px;
     background-color: white;
     margin-bottom: 20px;
-  }
-  .img {
+}
+
+.img {
     height: 266px;
     width: 230px;
     margin: 20px 15px 0 20px;
     background-size: cover;
     background-position: center;
-  }
-  .item-title {
+}
+
+.item-title {
     margin: 25px 15px 0 15px;
-  }
-  .see-more {
+}
+
+.see-more {
     margin-left: 20px;
     padding: 15px 0;
-  }
-  a {
+}
+
+a {
     text-decoration: none;
-  }
-  
-  /* footer */
-  .footer {
+}
+
+/* footer */
+.footer {
     margin-top: 15px;
-  }
-  
-  /* footer panel 1 */
-  .footer-panel-1 {
+}
+
+/* footer panel 1 */
+.footer-panel-1 {
     height: auto;
     min-height: 24px;
     width: 100%;
@@ -344,10 +364,10 @@ body {
     padding: 15px 0;
     color: white;
     font-weight: 500;
-  }
-  
-  /* footer panel 2 */
-  .footer-panel-2 {
+}
+
+/* footer panel 2 */
+.footer-panel-2 {
     height: auto;
     min-height: 400px;
     width: 100%;
@@ -357,41 +377,45 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px 0;
-  }
-  .footer-panel-2 .list ul a {
+}
+
+.footer-panel-2 .list ul a {
     display: block;
     margin-bottom: 10px;
     color: #dddddd;
-  }
-  .footer-panel-2 .list ul h3 {
+}
+
+.footer-panel-2 .list ul h3 {
     padding-top: 20px;
     margin-bottom: 10px;
-  }
-  .footer-panel-2 .list {
+}
+
+.footer-panel-2 .list {
     width: 100%;
     max-width: 301px;
     margin-bottom: 20px;
-  }
-  
-  /* panel-3 */
-  .footer-panel-3 {
+}
+
+/* panel-3 */
+.footer-panel-3 {
     height: 70px;
     width: 100%;
     background-color: #232F3E;
     border-top: 0.5px solid white;
     display: flex;
     justify-content: center;
-  }
-  .footer-panel-3 .logo {
+}
+
+.footer-panel-3 .logo {
     background-image: url("Amazon-logo-light2.jpg");
     height: 50px;
     width: 120px;
     margin: 10px 0;
     background-size: contain;
-  }
-  
-  /* panel-4 */
-  .footer-panel-4 {
+}
+
+/* panel-4 */
+.footer-panel-4 {
     height: auto;
     min-height: 70px;
     width: 100%;
@@ -402,52 +426,55 @@ body {
     display: flex;
     flex-direction: column;
     padding: 10px 0;
-  }
-  .pages-link {
+}
+
+.pages-link {
     height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  }
-  .pages-link a {
+}
+
+.pages-link a {
     margin-top: 10px;
     padding: 0 15px;
-  }
-  .web-info {
+}
+
+.web-info {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 10px;
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media screen and (max-width: 1024px) {
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
     .box {
         width: calc(50% - 20px);
     }
-  }
-  
-  @media screen and (max-width: 480px) {
-    
+}
+
+@media screen and (max-width: 480px) {
+
     .box {
         width: 100%;
     }
-    
+
     .footer-panel-2 .list {
         width: 100%;
         max-width: none;
     }
-  }
-  
-  @media screen and (max-width: 62em) {
+}
+
+@media screen and (max-width: 62em) {
     .content {
         min-height: 200px;
     }
-  
+
     .content-msg {
         font-size: 0.8rem;
         padding: 6px 8px;
     }
-  }
+}
