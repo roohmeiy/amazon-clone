@@ -14,7 +14,7 @@ Follow these steps to install and set up the Amazon clone website using Nginx on
 
 2. Move the project files to the web server directory:
 ```bash
-sudo mv /home/ubuntu/amazon-clone /var/www/
+sudo mv /path to/amazon-clone /var/www/
 ```
 
 3. Configure Nginx to serve the website:
